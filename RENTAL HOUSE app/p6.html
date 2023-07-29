@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Houses</title>
+    <!-- LInk To CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Box Icons -->
+    <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+
+<style>
+    * {box-sizing: border-box;}
+    body {font-family: Verdana, sans-serif;}
+    .mySlides {display: none;}
+    img {vertical-align: middle;}
+    
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+    
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+    
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+    
+    /* The dots/bullets/indicators */
+    .dot {
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    
+    .active {
+      background-color: #717171;
+    }
+    
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+    
+    @-webkit-keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+    
+    @keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+    
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .text {font-size: 11px}
+    }
+    </style>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="nav container">
+            <!-- Logo -->
+            <a href="index.html" class="logo"><img src='img/logo.jpg'></img>Rental Houses</a>
+            <!-- Menu Icon -->
+            <input type="checkbox" name="" id="menu">
+            <label for="menu" i class='bx bx-menu' id="menu-icon"></i></label>
+            <!-- Nav List -->
+            <ul class="navbar">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#sales">Services</a></li>
+                <li><a href="#properties">Properties</a></li>
+            </ul>
+                <!--Searchbar-->
+                <a href="search.html" class="search"><i class="bx bx bx-search"></i> Search</a>
+            <!-- Log In Button -->
+            <a href="login.html" class="btn">Log In</a>
+        </div>
+
+    </header>
+
+<br><br>
+
+<br><br>
+
+ <!-- About -->
+ <section class="about container" id="about">
+    <div class="about-img">
+        <img src="img/cbe1.jpg" alt="">
+    </div>
+    <div class="about-text">
+        <span>About House</span>
+        <h2>Villa E-17, Vadavalli,  <br>Coimbatore - 641041, Tamil Nadu. </h2>
+        <p>House Owner: Mr. Mano</p>
+        <p>Owner's Number: +91 6381717874</p>
+        <p>House Rent: Rs.49,999/month</p>
+        <a href="cpay.html" class="btn">Book House for Rent</a>
+    </div>
+</section>
+
+ <!-- About -->
+ <section class="about container" id="about">
+ <main id="boxes">
+
+    <div id="column1" style="float:left">
+        <span><b>About House</b></span>
+        <br>
+    <p><b>Area: </b><br>
+        Plot area 2000
+        (185.81 sq.m.)<br>
+        Built Up area: 1500 sq.ft. (139.35 sq.m.)  </p>
+        <p><b>Configuration: </b><br>
+            <i class='bx bx-bed' > 4 Bedrooms </i> <br>
+            <i class='bx bx-bath'> 2 Bathrooms </i><br><i class='bx bx-door-open'> 2 Balconies </i> <br> Living Room, Study Room, Others
+        </p>       
+    </div>
+<br>
+    <div id="column2" style="float:left">
+        <span><b>Nearest</b></span>
+        <br>
+    <p><b>Bus Stop: </b><br>
+        Just 300m from Bus Stop
+        <br></p>
+        <p><b>Railway Station: </b><br>
+            6.56 km from Coimbatore North Railway Station</p>
+            <br>
+    </div><br>
+                <div id="column3" style="float:left">
+                    <span><b>Owner Details</b></span>
+                    <br>
+                <p><b>Name: </b>Mr. Mano<br>
+                    <b>Phone number: </b>+91 6381717874<br>
+                    <b>Email Id: </b>manoranjantce@gmail.com<br>
+                    <b>Address: </b>No.66, 4th cross street, Marutha Nagar, <br>Coimbatore - 641041, Tamil Nadu, India.<br>
+                    <br></p>             
+    </div>
+</section>
+<center>
+    <h2>Inside House</h2>
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="img/p1-1.jpg" style="width:800px; height: 400px;">
+      <div class="text">Living Room</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="img/p1-2.jpg" style="width:800px; height: 400px;">
+      <div class="text">Kitchen</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="img/p1-3.jpg" style="width:800px; height: 400px;">
+      <div class="text">Bedroom</div>
+    </div>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+</center>
+    <script>
+    var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 3000); // Change image every 2 seconds
+    }
+    </script>
+
+    <!-- Newsletter -->
+    <section class="newsletter container">
+        <h2>Have Question in mind? <br>Let us help you</h2>
+        <form action="">
+            <input type="email" name="" id="email-box" placeholder="yourmail@gmail.com" required>
+            <input type="submit" value="Send" class="btn">
+        </form>
+    </section>
+    
+     <!-- Footer -->
+     <section class="footer">
+        <div class="footer-container container">
+            <h2> <img src="img/logo.jpg" style="height: 100px; width: 175px;">
+            <br>Rental Houses</h2>
+            <div class="footer-box">
+                <h3>Quick Links</h3>
+                <a href="#">Sell Property</a>
+                <a href="#">Build House</a>
+                <a href="#">Verify User</a>
+            </div>
+            <div class="footer-box">
+                <h3>Locations</h3>
+                <a href="#">Madurai</a>
+                <a href="#">Chennai</a>
+                <a href="#">Coimbatore</a>
+            </div>
+            <div class="footer-box">
+                <h3>Contact</h3>
+                <a href="#">Toll Free Number : 1800 002 579</a>
+                <a href="#">admin@rentalhouses.com</a>
+                <div class="social">
+                    <a href="#"><i class='bx bxl-facebook' ></i></a>
+                    <a href="#"><i class='bx bxl-twitter' ></i></a>
+                    <a href="#"><i class='bx bxl-instagram' ></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Copyright -->
+    <div class="copyright">
+        <p>&#169; Rental Houses - All Right Reserved</p>
+    </div>
+
+    
+</body>
+</html>
